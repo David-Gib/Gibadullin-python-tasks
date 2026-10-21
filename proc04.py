@@ -1,0 +1,21 @@
+# Proc4. Функция triangle_ps(a) возвращает периметр P = 3·a и площадь
+# S = a²·√3/4 равностороннего треугольника со стороной a.
+# Найти P и S для трёх данных сторон.
+import math
+
+
+def triangle_ps(a):
+    """Возвращает кортеж (P, S) равностороннего треугольника со стороной a.
+
+    Ничего не печатает.
+    """
+    perimeter = 3 * a
+    area = a ** 2 * math.sqrt(3) / 4
+    return perimeter, area
+
+
+for i in range(3):
+    a = float(input())
+    p, s = triangle_ps(a)
+    print(p)
+    print(s)
